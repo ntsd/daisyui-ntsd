@@ -1,4 +1,4 @@
-export const lightTheme = {
+export const light = {
   "color-scheme": "light",
   fontFamily:
     "SFMono-Regular, Consolas, Menlo, Monaco, Liberation Mono, Courier New, monospace",
@@ -20,7 +20,7 @@ export const lightTheme = {
   "--tab-radius": "0",
 };
 
-export const darkTheme = {
+export const dark = {
   "color-scheme": "dark",
   fontFamily:
     "SFMono-Regular, Consolas, Menlo, Monaco, Liberation Mono, Courier New, monospace",
@@ -44,9 +44,9 @@ export const darkTheme = {
 
 export default [
   {
-    light: lightTheme,
+    light: light,
   },
   {
-    dark: darkTheme,
+    dark: dark,
   },
 ];

@@ -19,3 +19,25 @@ module.exports = {
   },
 };
 ```
+
+Customize the theme
+
+```js
+module.exports = {
+  ...
+  daisyui: {
+    themes: [
+      {
+        light: {
+          ...require('daisyui-ntsd').light,
+          "primary": "blue",
+          "primary-focus": "mediumblue",
+        }
+      },
+      {
+        dark: require('daisyui-ntsd').dark
+      }
+    ],
+  },
+};
+```
