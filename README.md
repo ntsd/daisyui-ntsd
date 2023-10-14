@@ -52,22 +52,22 @@ import { light, dark } from 'daisyui-ntsd';
 
 export default {
   ...
-	plugins: [daisyui],
-	daisyui: {
-		themes: [
+  plugins: [daisyui],
+  daisyui: {
+    themes: [
       {
-				light: {
+        light: {
           // apply default light theme
           ...light,
           // customize
           "primary": "blue",
           "primary-focus": "mediumblue",
         },
-			},
-			{
-				dark: dark,
-			}
-		]
-	}
+      },
+      {
+        dark: dark,
+      }
+    ]
+  }
 } satisfies Config;
 ```
