@@ -1,14 +1,25 @@
 {
   "name": "daisyui-ntsd",
-  "version": "1.0.4",
-  "description": "A DaisyUI theme",
+  "version": "1.0.8",
+  "description": "A DaisyUI theme from @ntsd",
   "author": "Jirawat Boonkumnerd <contact@ntsd.dev> (https://ntsd.dev)",
-  "main": "theme.js",
+  "main": "./dist/cjs/theme.js",
+  "types": "./dist/types/theme.d.ts",
+  "module": "./dist/esm/theme.js",
   "files": [
-    "theme.js"
+    "./dist/**/*"
   ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/theme.d.ts",
+      "require": "./dist/cjs/theme.js",
+      "import": "./dist/esm/theme.js",
+      "default": "./dist/esm/theme.js"
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json"
   },
   "repository": {
     "type": "git",
@@ -25,5 +36,8 @@
   "homepage": "https://github.com/ntsd/daisyui-ntsd#readme",
   "dependencies": {
     "chroma-js": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/chroma-js": "^2.4.1"
   }
 }
