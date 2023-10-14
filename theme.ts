@@ -28,7 +28,7 @@ const baseLight = chroma("#eef");
 const baseDark = chroma("#0d1117");
 
 // colors: https://daisyui.com/docs/colors/#-2
-export const light = {
+export const light: { [key: string]: string } = {
   "color-scheme": "light",
   fontFamily: fontFamily,
   primary: primaryLight.hex(),
@@ -48,7 +48,7 @@ export const light = {
   ...cssVariables,
 };
 
-export const dark = {
+export const dark: { [key: string]: string } = {
   "color-scheme": "dark",
   fontFamily: fontFamily,
   primary: primaryDark.hex(),
