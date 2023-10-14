@@ -24,7 +24,9 @@ const neutralLight = chroma("#6b7280");
 const neutralDark = neutralLight.brighten(0.5);
 const errorLight = chroma("#e24056");
 const errorDark = errorLight.brighten(0.5);
-const baseLight = chroma("#eef");
+const base100Light = chroma("#fff");
+const base200Light = chroma("#eef");
+const base300Light = chroma("#e7e7f7");
 const baseDark = chroma("#0d1117");
 
 // colors: https://daisyui.com/docs/colors/#-2
@@ -41,9 +43,9 @@ export const light: { [key: string]: string } = {
   "neutral-content": white.hex(),
   error: errorLight.hex(),
   "error-content": white.hex(),
-  "base-100": baseLight.hex(),
-  "base-200": baseLight.darken(0.1).hex(),
-  "base-300": baseLight.darken(0.2).hex(),
+  "base-100": base100Light.hex(),
+  "base-200": base200Light.hex(),
+  "base-300": base300Light.hex(),
   "base-content": black.hex(),
   ...cssVariables,
 };
