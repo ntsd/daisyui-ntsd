@@ -1,6 +1,6 @@
 {
   "name": "daisyui-ntsd",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A DaisyUI theme from @ntsd",
   "author": "Jirawat Boonkumnerd <contact@ntsd.dev> (https://ntsd.dev)",
   "main": "./dist/cjs/theme.js",

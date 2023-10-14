@@ -25,8 +25,8 @@ const neutralDark = neutralLight.brighten(0.5);
 const errorLight = chroma("#e24056");
 const errorDark = errorLight.brighten(0.5);
 const base100Light = chroma("#fff");
-const base200Light = chroma("#eef");
-const base300Light = chroma("#e7e7f7");
+const base200Light = chroma("#fbfbff");
+const base300Light = chroma("#eef");
 const baseDark = chroma("#0d1117");
 
 // colors: https://daisyui.com/docs/colors/#-2
