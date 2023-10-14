@@ -41,3 +41,33 @@ module.exports = {
   },
 };
 ```
+
+Example usage for `tailwind.config.ts`
+
+```ts
+import type { Config } from 'tailwindcss';
+import daisyui from 'daisyui';
+// daisyui-ntsd support typescript module
+import { light, dark } from 'daisyui-ntsd';
+
+export default {
+  ...
+	plugins: [daisyui],
+	daisyui: {
+		themes: [
+      {
+				light: {
+          // apply default light theme
+          ...light,
+          // customize
+          "primary": "blue",
+          "primary-focus": "mediumblue",
+        },
+			},
+			{
+				dark: dark,
+			}
+		]
+	}
+} satisfies Config;
+```
